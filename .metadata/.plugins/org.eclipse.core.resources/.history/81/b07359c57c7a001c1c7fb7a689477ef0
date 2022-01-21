@@ -1,0 +1,29 @@
+package com.example.GlobalExeptionHandling.exception;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+public class ErrorResponse {
+
+	private LocalDateTime timeStamp;
+	private String message;
+	private List<String> fieldErrors = new ArrayList<>();
+
+	public LocalDateTime getTimeStamp() {
+		return timeStamp;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+	
+	public List<String> getFieldErrors() {
+		return fieldErrors;
+	}
+}

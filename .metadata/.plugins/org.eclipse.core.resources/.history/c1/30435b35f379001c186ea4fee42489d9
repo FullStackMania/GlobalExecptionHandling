@@ -1,0 +1,5 @@
+package com.example.GlobalExeptionHandling.exception;
+
+public class ErrorResponse {
+
+}
